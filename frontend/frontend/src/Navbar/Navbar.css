@@ -1,0 +1,84 @@
+.navbar {
+  width: 100%;
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures it stays above other content */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 7%; /* Adjusted padding */
+  transition: 0.5s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.logo {
+  width: 160px;
+  cursor: pointer;
+}
+
+ul {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0 22px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  width: 50px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #37a2b8;
+  padding: 5.5px 9.5px;
+  border-radius: 50px;
+}
+
+.search-box input {
+  padding: 0.5px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 18px;
+  max-width: 200px;
+}
+
+.search-box input::placeholder {
+  color: #fff;
+}
+
+.search-box img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.dark .navbar {
+  background: #000;
+  color: #fff;
+}
+
+.dark .search-box {
+  background-color: #fff;
+}
+
+.dark .search-box input {
+  color: #222;
+}
+
+.dark .search-box input::placeholder {
+  color: #222;
+}

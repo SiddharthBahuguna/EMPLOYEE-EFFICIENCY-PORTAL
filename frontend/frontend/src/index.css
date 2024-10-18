@@ -1,0 +1,94 @@
+/* Main CSS file */
+
+#root {
+  background-color: black; /* Set the background color to black */
+  min-height: 100vh; /* Ensure it covers the full height of the viewport */
+  color: white; /* Optional: set default text color to white for better contrast */
+}
+
+.navbar {
+  width: 100%; /* Ensures full width */
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures it stays above other content */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black; /* Match navbar background with root */
+  padding: 15px 0; /* Adjusted padding to remove left and right padding */
+  transition: 0.5s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.logo {
+  width: 160px;
+  cursor: pointer;
+  margin-left: 7%; /* Adding margin to the logo */
+}
+
+ul {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0 22px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white; /* Optional: set list item text color to white */
+}
+
+.toggle-icon {
+  width: 50px;
+  cursor: pointer;
+  margin-right: 7%; /* Adding margin to the toggle icon */
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #242424;
+  padding: 5.5px 9.5px;
+  border-radius: 50px;
+}
+
+.search-box input {
+  padding: 0.5px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 18px;
+  max-width: 200px;
+}
+
+.search-box input::placeholder {
+  color: #fff;
+}
+
+.search-box img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.dark .navbar {
+  background: #000;
+  color: #fff;
+}
+
+.dark .search-box {
+  background-color: #fff;
+}
+
+.dark .search-box input {
+  color: #222;
+}
+
+.dark .search-box input::placeholder {
+  color: #222;
+}

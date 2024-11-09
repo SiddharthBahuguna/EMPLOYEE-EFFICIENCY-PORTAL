@@ -45,9 +45,9 @@ npm install
 ```
 3. Set up environment variables:
 
-▶Create a ```.env``` file in the root directory.
+▶ Create a ```.env``` file in the root directory.
 
-▶Add necessary keys, e.g., ```DB_URI```, ```JWT_SECRET```.
+▶ Add necessary keys, e.g., ```DB_URI```, ```JWT_SECRET```.
 
 4. Run the application:
 ```bash
